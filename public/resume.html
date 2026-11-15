@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resume of Rusul Azom Sumon, AI-driven full-stack developer.">
+    <title>Rusul Azom Sumon — Resume</title>
+    <style>
+      :root { color-scheme: light; --ink: #172229; --muted: #53636b; --accent: #12805c; --line: #d9e2e4; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #edf2f2; color: var(--ink); font: 14px/1.6 Arial, Helvetica, sans-serif; }
+      .sheet { width: min(850px, calc(100% - 32px)); margin: 32px auto; padding: 54px 60px; background: white; box-shadow: 0 12px 50px #12242b18; }
+      header { padding-bottom: 22px; border-bottom: 2px solid var(--accent); }
+      h1 { margin: 0; font-size: 34px; letter-spacing: -1.3px; }
+      .role { margin: 5px 0 12px; color: var(--accent); font-size: 15px; font-weight: 700; }
+      .contact { display: flex; flex-wrap: wrap; gap: 5px 17px; color: var(--muted); font-size: 12px; }
+      a { color: var(--accent); text-decoration: none; }
+      section { margin-top: 23px; }
+      h2 { margin: 0 0 9px; color: var(--accent); font-size: 13px; letter-spacing: .11em; text-transform: uppercase; }
+      p { margin: 0 0 8px; color: var(--muted); }
+      .item { margin: 0 0 15px; }
+      .item-head { display: flex; justify-content: space-between; gap: 12px; }
+      h3 { margin: 0; font-size: 14px; }
+      .date { flex: 0 0 auto; color: var(--muted); font-size: 12px; }
+      .place { margin: 2px 0 5px; color: var(--accent); font-size: 12px; }
+      ul { margin: 5px 0 0; padding-left: 19px; color: var(--muted); }
+      li { margin: 3px 0; }
+      .skills { color: var(--muted); }
+      .print { position: fixed; right: 20px; bottom: 20px; padding: 12px 17px; border: 0; border-radius: 8px; background: var(--accent); color: white; cursor: pointer; font-weight: 700; }
+      @media (max-width: 600px) {
+        .sheet { margin: 10px auto; padding: 30px 23px; }
+        h1 { font-size: 28px; }
+        .item-head { flex-direction: column; gap: 0; }
+      }
+      @media print {
+        body { background: white; font-size: 11px; }
+        .sheet { width: 100%; margin: 0; padding: 0; box-shadow: none; }
+        .print { display: none; }
+        a { color: inherit; }
+        section { margin-top: 17px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <header>
+        <h1>Rusul Azom Sumon</h1>
+        <p class="role">AI-Driven Full-Stack Developer</p>
+        <div class="contact">
+          <a href="mailto:rusulazomsumon@gmail.com">rusulazomsumon@gmail.com</a>
+          <a href="https://github.com/RusulAzom">github.com/RusulAzom</a>
+          <a href="https://www.linkedin.com/in/rusulazomsumon">LinkedIn</a>
+          <span>Dhaka, Bangladesh</span>
+        </div>
+      </header>
+      <section>
+        <h2>Profile</h2>
+        <p>Full-stack developer and IUBAT CSE graduate building fast, SEO-minded web applications with Next.js, React, TypeScript, and lean cloud infrastructure. Experienced in independent product development, performance optimization, and AI-assisted engineering workflows.</p>
+      </section>
+      <section>
+        <h2>Experience</h2>
+        <div class="item">
+          <div class="item-head"><h3>Full-Stack Web Developer — Freelance &amp; Independent Builder</h3><span class="date">2024 – Present</span></div>
+          <ul>
+            <li>Architected and shipped full-stack Next.js and React platforms, including BCSpark and DHITedu.info.</li>
+            <li>Applied SSR/SSG optimization, Firebase and MongoDB auth pipelines, and CDN delivery.</li>
+            <li>Built static-content and edge-caching flows for responsive, cost-conscious user experiences.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head"><h3>Web Developer &amp; Technical Specialist — INTLAB</h3><span class="date">Dec 2024 – Jan 2026</span></div>
+          <ul>
+            <li>Developed custom themes, plugins, and responsive frontend features.</li>
+            <li>Resolved Core Web Vitals and frontend performance bottlenecks.</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>Selected projects</h2>
+        <div class="item"><h3>BCSpark — AI-Powered BCS &amp; Government-Job Preparation</h3><p>40+ study tools and a T20 randomized quiz engine built with Next.js, React, TypeScript, Tailwind CSS, Firebase, and Vercel. Static JSON and CDN edge caching support fast, cost-efficient delivery.</p></div>
+        <div class="item"><h3>DHITedu.info — Institutional Information Portal</h3><p>Next.js and Firebase portal with multi-level district filtering, a branch dashboard, and role-based administrator controls.</p></div>
+        <div class="item"><h3>Dynamic News Card &amp; Asset Generator Suite</h3><p>JavaScript, HTML5 Canvas, Chrome Extension APIs, and Next.js tools for social news-card rendering and browser asset extraction.</p></div>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <div class="item">
+          <h3>Bachelor of Science in Computer Science and Engineering (CSE)</h3>
+          <p>International University of Business Agriculture and Technology (IUBAT) · Dhaka, Bangladesh</p>
+          <p>Coursework: Data Structures, Algorithms, Database Management Systems, Software Engineering.</p>
+        </div>
+      </section>
+      <section>
+        <h2>Technical skills</h2>
+        <p class="skills"><strong>Frontend:</strong> Next.js (App Router), React, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3</p>
+        <p class="skills"><strong>Backend &amp; data:</strong> Node.js, Express.js, PHP, Laravel, MongoDB, Firebase, MySQL, REST APIs</p>
+        <p class="skills"><strong>Tools &amp; cloud:</strong> Git, GitHub, Vercel, Cloudflare, Copilot, Cline, Technical SEO</p>
+      </section>
+    </main>
+    <button class="print" onclick="window.print()">Print / Save as PDF</button>
+  </body>
+</html>
