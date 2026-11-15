@@ -4,12 +4,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Rusul Azom Sumon | AI-Driven Full-Stack Developer",
   description:
-    "Rusul Azom Sumon builds fast, scalable full-stack web applications with Next.js, React, TypeScript, and lean cloud infrastructure.",
+    "Rusul Azom Sumon architects sub-second, SEO-indexed, zero-cost-scaling web platforms powered by Next.js, React, Node.js, TypeScript, and AI engineering workflows.",
   applicationName: "Rusul.dev",
   openGraph: {
     title: "Rusul Azom Sumon | AI-Driven Full-Stack Developer",
     description:
-      "Building sub-second, SEO-indexed, scalable web applications.",
+      "Architecting sub-second, SEO-indexed, zero-cost-scaling web platforms.",
     type: "website",
   },
 };
