@@ -161,8 +161,9 @@ const navigation = [
   ["Contact", "#contact"],
 ] as const;
 
-// Placeholder—replace with the exact phone and WhatsApp digits before publishing.
-const phoneNumber = "+880 1700-000000";
+const phoneNumber = "+880 1882-834071";
+const whatsappUrl =
+  "https://wa.me/8801882834071?text=Hi%20Rusul%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.";
 
 const socialLinks = [
   { name: "GitHub", href: "https://github.com/RusulAzom", icon: "github" },
@@ -360,6 +361,38 @@ const projects: Project[] = [
     preview: "news",
   },
 ];
+
+/* --------------------------- client contributions -------------------------- */
+
+const clientWork = [
+  {
+    name: "INTLAB",
+    display: "intlab.it",
+    url: "https://intlab.it/",
+    role: "Web Developer & Technical Specialist",
+    tag: "PRODUCTION",
+    summary:
+      "Engineered custom themes, plugins, responsive frontend components, and Core Web Vitals performance optimizations for an Italian web technology platform.",
+  },
+  {
+    name: "Banglar Gonojagoron 24",
+    display: "banglargonojagoron24.com",
+    url: "http://banglargonojagoron24.com/",
+    role: "Custom WordPress Theme Developer",
+    tag: "THEME DEV",
+    summary:
+      "Designed and developed a bespoke, high-speed WordPress news portal theme featuring structured editorial categories, mobile-first reading layouts, and custom social sharing card workflows.",
+  },
+  {
+    name: "Autism New Zealand",
+    display: "autismnz.org.nz",
+    url: "https://autismnz.org.nz/",
+    role: "Project Team Member — Content Writing & Copywriting",
+    tag: "COPYWRITING",
+    summary:
+      "Contributed accessible, empathetic web copywriting and structured content architecture as part of the digital delivery team supporting New Zealand's national autism organization.",
+  },
+] as const;
 
 /* ------------------------------ neural canvas ------------------------------ */
 
@@ -758,7 +791,12 @@ export default function Portfolio() {
             <span className="status-dot" />
             <span className="nav-status-label">ONLINE</span>
           </a>
-          <a className="nav-cta" href="#contact">
+          <a
+            className="nav-cta"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Let&apos;s talk <Icon name="arrow-up-right" size={13} />
           </a>
         </div>
@@ -1180,6 +1218,43 @@ export default function Portfolio() {
               </article>
             ))}
           </div>
+
+          {/* client & production contributions */}
+          <div className="client-block" aria-labelledby="clients-title">
+            <div className="client-heading reveal">
+              <span className="eyebrow">
+                <span className="eyebrow-index">05+</span> Client &amp; Production // Contributions
+              </span>
+              <h2 className="section-title" id="clients-title">Shipped for real clients.</h2>
+              <p className="section-subtitle">
+                Beyond personal builds—production work delivered for teams and
+                organizations across three countries.
+              </p>
+            </div>
+            <div className="client-grid">
+              {clientWork.map((client) => (
+                <article className="client-card spot reveal" key={client.name}>
+                  <div className="client-card-top">
+                    <span className="client-domain">{client.display}</span>
+                    <span className="client-tag">{client.tag}</span>
+                  </div>
+                  <h3>{client.name}</h3>
+                  <span className="client-role">
+                    <Icon name="briefcase" size={11} /> {client.role}
+                  </span>
+                  <p>{client.summary}</p>
+                  <a
+                    className="client-link"
+                    href={client.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit live site <Icon name="external" size={13} />
+                  </a>
+                </article>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* -------------------------------- contact ------------------------------ */}
@@ -1200,9 +1275,9 @@ export default function Portfolio() {
               </a>
               <a
                 className="contact-card spot reveal"
-                href={`https://wa.me/${phoneNumber.replace(/\D/g, "")}`}
+                href={whatsappUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <span className="contact-card-icon"><Icon name="phone" size={16} /></span>
                 <span><small>PHONE &amp; WHATSAPP</small><strong>{phoneNumber}</strong></span>
@@ -1346,7 +1421,7 @@ export default function Portfolio() {
             </div>
             <div className="dialog-actions">
               <a className="button-primary" href={activeProject.live} target="_blank" rel="noreferrer">
-                Live project <Icon name="external" size={13} />
+                Visit live project <Icon name="external" size={13} />
                 <small>{activeProject.liveLabel}</small>
               </a>
               <a className="button-secondary" href={activeProject.repo} target="_blank" rel="noreferrer">
